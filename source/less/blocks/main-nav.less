@@ -18,6 +18,9 @@
   width: 20px;
   height: 14px;
 
+  top: 0;
+  right: -1px;
+
   &::after {
     content: "";
     display: block;
@@ -44,6 +47,10 @@
 .main-nav--opened .main-nav__toggle {
   width: 21px;
   height: 20px;
+
+  position: relative;
+  top: 0;
+  right: -100%;
 
   &::after,
   &::before {
@@ -77,5 +84,5 @@
 .main-nav__link {
   .link-reset;
 
-  // font: 700 17px/0.70 'Open Sans', Arial, sans
+  font: var(--main-nav-mobile);
 }
