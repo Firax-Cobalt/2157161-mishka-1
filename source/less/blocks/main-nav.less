@@ -1,3 +1,7 @@
+.main-nav {
+  align-self: flex-start;
+}
+
 .main-nav__toggle {
   position: relative;
 
@@ -20,6 +24,7 @@
 
     width: 100%;
     height: 2px;
+
     background-color: var(--background-color-1);
 
     box-shadow: 0 6px 0 0 var(--background-color-1),
@@ -31,9 +36,9 @@
   }
 }
 
-// .main-nav--closed .main-nav__list {
-//   display: none;
-// }
+.main-nav--closed .main-nav__list {
+  display: none;
+}
 
 
 .main-nav--opened .main-nav__toggle {
@@ -71,4 +76,6 @@
 
 .main-nav__link {
   .link-reset;
+
+  // font: 700 17px/0.70 'Open Sans', Arial, sans
 }
