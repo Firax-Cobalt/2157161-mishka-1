@@ -7,9 +7,36 @@
 
 .cute-things__title {
   .indent-reset;
-  margin: 0 auto;
+  margin: 0 auto 119px;
 
   text-align: center;
 
   width: 260px;
+}
+
+.cute-things__link {
+  .link-reset;
+
+  display: block;
+
+  padding: 24px 30px 31px;
+
+  color: var(--color-2);
+  font: @font-cute-things-link-mobile;
+
+  &--interior {
+    background-color: var(--background-color-3);
+  }
+
+  &--toys {
+    background-color: var(--background-color-4);
+  }
+}
+
+.cute-things__link-name {
+  display: block;
+
+  width: 130px;
+
+  line-height: inherit;
 }
