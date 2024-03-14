@@ -10,4 +10,16 @@
       font: @font-title-large-desktop;
     }
   }
+
+  &--medium {
+    font: @font-title-medium-mobile;
+
+    @media (min-width: @tablet-width) {
+      font: @font-title-medium-tablet;
+    }
+
+    @media (min-width: @desktop-width) {
+      font: @font-title-medium-desktop;
+    }
+  }
 }
