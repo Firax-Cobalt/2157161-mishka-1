@@ -1,0 +1,13 @@
+.title {
+  &--large {
+    font: @font-title-large-mobile;
+
+    @media (min-width: @tablet-width) {
+      font: @font-title-large-tablet;
+    }
+
+    @media (min-width: @desktop-width) {
+      font: @font-title-large-desktop;
+    }
+  }
+}
