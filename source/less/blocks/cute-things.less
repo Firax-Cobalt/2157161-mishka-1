@@ -1,8 +1,25 @@
 .cute-things {
   padding-top: 75px;
 
-  background: url("../img/hero-mobile.jpeg") no-repeat;
-  background-size: cover;
+  position: relative;
+  z-index: 3;
+
+  &::before {
+    content: "";
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    background: var(--background-color-12) url("../img/hero-mobile.jpeg")
+      no-repeat top -17px center;
+  }
 }
 
 .cute-things__title {
@@ -19,17 +36,37 @@
 
   display: block;
 
+  min-height: 103px;
+
+  position: relative;
+
   padding: 24px 30px 31px;
 
   color: var(--color-2);
   font: @font-cute-things-link-mobile;
 
+  transition-property: background-color, min-height;
+  transition-duration: 0.3s, 0.3s;
+  transition-timing-function: ease-in-out, ease-in-out;
+
+  &:hover {
+    min-height: 108px;
+  }
+
   &--interior {
     background-color: var(--background-color-3);
+
+    &:hover {
+      background-color: var(--background-color-13);
+    }
   }
 
   &--toys {
     background-color: var(--background-color-4);
+
+    &:hover {
+      background-color: var(--background-color-14);
+    }
   }
 }
 
@@ -39,4 +76,32 @@
   width: 130px;
 
   line-height: inherit;
+}
+
+.cute-things__link-icon {
+  position: absolute;
+
+  opacity: 50%;
+
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+
+  &--interior {
+    top: 23px;
+    right: 34px;
+  }
+
+  &--toys {
+    top: 22px;
+    right: 26px;
+  }
+}
+
+.cute-things__link:hover .cute-things__link-icon {
+  opacity: 70%;
+}
+
+.cute-things__link:active .cute-things__link-icon {
+  opacity: 30%;
 }
