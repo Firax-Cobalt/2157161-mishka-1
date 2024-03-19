@@ -6,5 +6,18 @@
     border: 2px solid var(--color-5);
 
     font: @font-button-primary-mobile;
+
+    transition-property: background-color, color;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease-in-out, ease-in-out;
+
+    &:hover {
+      background-color: var(--background-color-5);
+      color: var(--color-2);
+    }
+
+    &:active {
+      color: rgba(var(--color-2), 0.3);
+    }
   }
 }
