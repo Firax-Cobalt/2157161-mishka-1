@@ -1,65 +1,95 @@
+.about-us {
+  padding: 0 20px 0;
+}
+
 .about-us__list {
   .list-reset;
 }
 
 .about-us__item {
+  font: @font-about-us-text-mobile;
+
+  @media (min-width: @tablet-width) {
+    font: @font-about-us-text-tablet;
+  }
+
+  @media (min-width: @desktop-width) {
+    font: @font-about-us-text-desktop;
+  }
+
+  &::before {
+    margin-bottom: 20px;
+  }
+
   &--eco {
-    content: "";
-    display: block;
+    &::before {
+      content: "";
+      display: block;
 
-    background: url(../img/about-us/icon-1.svg);
+      background: url(../img/about-us/icon-1.svg) no-repeat;
 
-    width: 33px;
-    height: 38px;
+      width: 33px;
+      height: 38px;
+    }
   }
 
   &--money {
-    content: "";
-    display: block;
+    &::before {
+      content: "";
+      display: block;
 
-    background: url(../img/about-us/icon-2.svg);
+      background: url(../img/about-us/icon-2.svg) no-repeat;
 
-    width: 47px;
-    height: 27px;
+      width: 47px;
+      height: 27px;
+    }
   }
 
   &--likes {
-    content: "";
-    display: block;
+    &::before {
+      content: "";
+      display: block;
 
-    background: url(../img/about-us/icon-3.svg);
+      background: url(../img/about-us/icon-3.svg) no-repeat;
 
-    width: 34px;
-    height: 27px;
+      width: 34px;
+      height: 27px;
+    }
   }
 
   &--tenderness {
-    content: "";
-    display: block;
+    &::before {
+      content: "";
+      display: block;
 
-    background: url(../img/about-us/icon-4.svg);
+      background: url(../img/about-us/icon-4.svg) no-repeat;
 
-    width: 35px;
-    height: 34px;
+      width: 33px;
+      height: 38px;
+    }
   }
 
   &--support {
-    content: "";
-    display: block;
+    &::before {
+      content: "";
+      display: block;
 
-    background: url(../img/about-us/icon-5.svg);
+      background: url(../img/about-us/icon-5.svg) no-repeat;
 
-    width: 55px;
-    height: 23px;
+      width: 55px;
+      height: 23px;
+    }
   }
 
   &--gift {
-    content: "";
-    display: block;
+    &::before {
+      content: "";
+      display: block;
 
-    background: url(../img/about-us/icon-6.svg);
+      background: url(../img/about-us/icon-6.svg) no-repeat;
 
-    width: 33px;
-    height: 32px;
+      width: 33px;
+      height: 32px;
+    }
   }
 }
