@@ -1,5 +1,10 @@
 .about-us {
-  padding: 0 20px 0;
+  padding: 37px 30px 0;
+}
+
+.about-us__title {
+  .indent-reset;
+  margin-bottom: 29px;
 }
 
 .about-us__list {
@@ -7,6 +12,8 @@
 }
 
 .about-us__item {
+  position: relative;
+
   font: @font-about-us-text-mobile;
 
   @media (min-width: @tablet-width) {
@@ -18,7 +25,7 @@
   }
 
   &::before {
-    margin-bottom: 20px;
+    position: relative;
   }
 
   &--eco {
@@ -26,10 +33,15 @@
       content: "";
       display: block;
 
+      margin-bottom: 20px;
+
       background: url(../img/about-us/icon-1.svg) no-repeat;
 
       width: 33px;
       height: 38px;
+
+      top: 3px;
+      left: 8px;
     }
   }
 
@@ -37,6 +49,8 @@
     &::before {
       content: "";
       display: block;
+
+      margin-bottom: 26px;
 
       background: url(../img/about-us/icon-2.svg) no-repeat;
 
@@ -50,10 +64,15 @@
       content: "";
       display: block;
 
+      margin-bottom: 26px;
+
       background: url(../img/about-us/icon-3.svg) no-repeat;
 
       width: 34px;
       height: 27px;
+
+      top: 4px;
+      left: 7px;
     }
   }
 
@@ -62,10 +81,15 @@
       content: "";
       display: block;
 
+      margin-bottom: 15px;
+
       background: url(../img/about-us/icon-4.svg) no-repeat;
 
-      width: 33px;
+      width: 35px;
       height: 38px;
+
+      top: 1px;
+      left: 4px;
     }
   }
 
@@ -74,10 +98,15 @@
       content: "";
       display: block;
 
+      margin-bottom: 30px;
+
       background: url(../img/about-us/icon-5.svg) no-repeat;
 
       width: 55px;
       height: 23px;
+
+      top: 3px;
+      left: -6px;
     }
   }
 
@@ -86,10 +115,35 @@
       content: "";
       display: block;
 
+      margin-bottom: 22px;
+
       background: url(../img/about-us/icon-6.svg) no-repeat;
 
       width: 33px;
       height: 32px;
+
+      top: 1px;
+      left: 3px;
     }
+  }
+}
+
+.about-us__item {
+  margin-bottom: 30px;
+}
+
+.about-us__description {
+  .indent-reset;
+
+  &--eco {
+    width: 76%;
+  }
+
+  &--money {
+    width: 86%;
+  }
+
+  &--likes {
+    width: 79%;
   }
 }
