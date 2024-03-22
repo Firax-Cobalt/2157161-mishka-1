@@ -15,6 +15,10 @@
   color: var(--color-5);
 }
 
+.reviews__container-email {
+  margin-bottom: 30px;
+}
+
 .reviews__person-title {
   .indent-reset;
 
@@ -27,8 +31,69 @@
   font: @font-reviews-person-email-mobile;
 }
 
+.reviews__toggles {
+  display: flex;
+
+  margin-bottom: 38px;
+}
+
+.reviews__toggle {
+  .button-reset;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+  height: 52px;
+
+  background-color: transparent;
+
+  width: 50%;
+
+  position: relative;
+
+  transition: opacity 0.2s ease-in-out;
+
+  &::before {
+    content: "";
+
+    display: block;
+
+    background: url(../img/reviews-toggle.svg) no-repeat center;
+
+    width: 50px;
+    height: 26px;
+
+    transition: opacity 0.2s ease-in-out;
+  }
+}
+
+.reviews__toggle-left {
+  border-top: 1px solid var(--background-color-10);
+  border-right: 1px solid var(--background-color-10);
+  border-bottom: 1px solid var(--background-color-10);
+  border-left: 1px solid var(--background-color-10);
+}
+
+.reviews__toggle-right {
+  border-top: 1px solid var(--background-color-10);
+  border-left: 1px solid var(--background-color-10);
+  border-bottom: 1px solid var(--background-color-10);
+
+  transform: rotate(180deg);
+}
+
+.reviews__toggle:hover::before {
+  opacity: 60%;
+}
+
+.reviews__toggle:active::before {
+  opacity: 30%;
+}
+
 .rewviews__button-write {
-  padding: 16px 64px;
+  padding: 14px 64px;
 
   width: 100%;
 
