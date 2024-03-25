@@ -1,24 +1,23 @@
 .social {
-    .list-reset;
-    margin: 0 auto 36px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 32px;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 15px;
-
-    width: 43%;
+  width: 43%;
 }
 
+// .social__item:not(:last-child) {
+//   margin-right: 23%;
+// }
+
 .social__link {
-    .link-reset;
+  .link-reset;
 
-    display: inline-block;
+  display: inline-block;
 
-    transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
 
-    &:hover {
-        color: var(--color-11);
-    }
-
+  &:hover {
+    color: var(--color-11);
+  }
 }
